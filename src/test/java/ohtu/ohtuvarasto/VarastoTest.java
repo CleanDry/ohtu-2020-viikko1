@@ -120,7 +120,7 @@ public class VarastoTest {
 
     @Test
     public void merkkijonoEsitysOnOikea() {
-        String str1 = "saldo = 5.0, vielä tilaa 5.0";
+        String str1 = "saldo = 5.0, vielä tilaa 5";
         String str2 = varasto2.toString();
         System.out.println("varasto2:" + str2);
         assertEquals(str1, str2);
