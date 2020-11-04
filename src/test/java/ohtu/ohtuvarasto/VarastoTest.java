@@ -40,11 +40,6 @@ public class VarastoTest {
         assertEquals(10, varasto.getTilavuus(), vertailuTarkkuus);
         assertEquals(10, varasto2.getTilavuus(), vertailuTarkkuus);
     }
-    
-    @Test
-    public void uudellaVarastollaOikeaAlkuSaldo() {
-        assertEquals(5, varasto2.getSaldo(), vertailuTarkkuus);
-    }
 
     @Test
     public void lisaysLisaaSaldoa() {
@@ -110,13 +105,5 @@ public class VarastoTest {
         varasto.otaVarastosta(10);
         
         assertEquals(10, varasto.paljonkoMahtuu(), vertailuTarkkuus);
-    }
-
-    @Test
-    public void merkkijonoEsitysOnOikea() {
-        String str1 = "saldo = 5.0, vielä tilaa 5.0";
-        String str2 = varasto2.toString();
-        System.out.println("varasto2:" + str2);
-        assertEquals(str1, str2);
     }
 }
