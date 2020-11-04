@@ -45,12 +45,6 @@ public class VarastoTest {
     public void uudellaVarastollaOikeaAlkuSaldo() {
         assertEquals(5, varasto2.getSaldo(), vertailuTarkkuus);
     }
-    
-    @Test
-    public void uudellaVarastollaLiikaAlkuSaldoTayttaaSaldon() {
-        Varasto varastoA = new Varasto(10,11);
-        assertEquals(10, varastoA.getSaldo(), vertailuTarkkuus);
-    }
 
     @Test
     public void lisaysLisaaSaldoa() {
